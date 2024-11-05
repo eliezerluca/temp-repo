@@ -1,3 +1,25 @@
-$ ssh-keygen -t rsa -f "/c/Users/eli/.ssh/github" -C 'eliezerlucaslg@gmail.com'
+ssh-keygen -t rsa -f "/c/Users/eli/.ssh/github" -C 'eliezerlucaslg@gmail.com'
 
-$ eval "$(ssh-agent -s)"
+eval "$(ssh-agent -s)"
+
+ssh-add  /c/Users/eli/.ssh/github
+
+#iniciando o git
+git init
+git config --global user.name "Eliezer Lucas"
+git config --global user.email "eliezerlucaslg@gmail.com"
+
+git remote add origin git@github.com:eliezerluca/temp-repo.git
+
+git add .
+
+
+git commit -m "Initial"
+git push origin master
+
+git status
+
+
+git add .
+git commit -m 'Adicionando mais comandos no arquivo'
+git push origin master
