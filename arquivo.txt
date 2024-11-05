@@ -22,4 +22,9 @@ git status
 
 git add .
 git commit -m 'Adicionando mais comandos no arquivo'
-git push origin master
+git push origin master -u
+
+
+git add .
+git commit -m 'Adicionando mais comandos no arquivo'
+git push origin master -u
