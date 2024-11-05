@@ -1,33 +1,29 @@
 ssh-keygen -t rsa -f "/c/Users/eli/.ssh/github" -C 'eliezerlucaslg@gmail.com'
 
-#sempre vai ter que usar isso
+#Quando fechar o terminal preciso executar isso:
 eval "$(ssh-agent -s)"
-
 ssh-add  /c/Users/eli/.ssh/github
+
 
 #iniciando o git
 git init
 git config --global user.name "Eliezer Lucas"
 git config --global user.email "eliezerlucaslg@gmail.com"
-
 git remote add origin git@github.com:eliezerluca/temp-repo.git
 
+
+#Em um projeto novo temos:
 git add .
-
-
 git commit -m "Initial"
 git push origin master
 
+
+#git status para ver status atual
 git status
 
-
+# Editei:
 git add .
-git commit -m 'Adicionando mais comandos no arquivo'
-git push origin master -u
-
-
-git add .
-git commit -m 'Adicionando mais comandos no arquivo'
+git commit -m "Mensagem Justificando Commit"
 git push origin master -u
 
 #para ver os commits:
