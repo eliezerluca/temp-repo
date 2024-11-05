@@ -1,0 +1,3 @@
+$ ssh-keygen -t rsa -f "/c/Users/eli/.ssh/github" -C 'eliezerlucaslg@gmail.com'
+
+$ eval "$(ssh-agent -s)"
